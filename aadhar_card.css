@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Antonio:wght@400;500;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    font-size:62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    background:white;
+}
+
+/* ##### UTILITY CLASSES ######################3 */
+.container1{
+    max-width:1200px;
+    width:100%;
+    /* border:2px solid white; */
+    margin:0 auto;
+}
+.container{
+    max-width:1200px;
+    width:90%;
+    /* border:2px solid white; */
+    margin:0 auto;
+}
+
+.font-antonio{
+    font-family: 'Antonio', sans-serif;
+}
+.text-color-blue{
+    color:#00B2FF;
+}
+.lg-heading{
+    font-size:3rem;
+    font-weight:700;
+}
+
+/* ############# Navbar ################# */
+
+/* -------------------------- NAVBAR Styling ------------------- */
+.navbar{
+    color:white;
+    /* background:black; */
+    padding:1rem 1rem;
+    display:flex;
+    justify-content: space-between;
+    /* border:2px solid black; */
+}
+.logo a{
+    text-decoration:none;
+}
+.logo h2{
+    margin-left:5rem;
+    font-size:2rem;
+    color:#00B2FF;
+    font-family:'Aleo', serif;
+    letter-spacing: 2px;
+    /* border:2px solid red; */
+}
+.nav-items{
+    display:flex;
+    /* border:2px solid red; */
+}
+.nav-item{
+    padding:0.5rem;
+    margin-right:1.5rem;
+    list-style: none;
+    /* border:2px solid red; */
+}
+.nav-item a{
+    padding-top:3rem;
+    color:black;
+    text-decoration:none;
+    font-size:1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition:color 0.2s ease-in-out;
+    
+}
+.nav-item a:hover{
+    color:#00B2FF;
+    border-bottom:1px solid #00B2FF;
+    padding-bottom:1rem;
+}
+
+/* ############# DROPDOWN CONTENT ####################### */
+
+ .nav-item .dropdown-content-wrapper {
+    /* border:2px solid red; */
+    background:white;
+    margin-top:2rem;
+    display:none;
+    width:100%;
+    z-index:10;
+
+}
+
+.nav-items .nav-item .dropdown-content-wrapper a{
+    color:#00B2FF;
+    padding:1rem;
+}
+
+
+.nav-item:hover .dropdown-content-wrapper{
+    display:flex;
+    flex-direction:column;
+    box-shadow:0px 5px 10px rgba(182, 181, 181, 0.021);
+}
+
+/* ##################### MAIN CONTENT ############# */
+
+.main_content{
+    border:0.2px solid rgba(0, 0, 0, 0.096);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.096),
+                0px 10px 10px rgba(0, 0, 0, 0.096),
+                0px 0px 10px rgba(0, 0, 0, 0.096);
+    height:99vh;
+    margin-top: 2rem;
+    position:relative;
+    
+}
+
+.main_content h1{
+    font-size:3rem;
+    margin:2rem;
+    margin-left:2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.main_content h1:hover{
+    color:black;
+    text-shadow:0 0 13px orange,
+                0 0 13px green;
+}
+.main_content_image{
+    position:absolute;
+    top:20%;
+    height:300px;
+    width:400px;
+    /* border:2px solid red; */
+    left:60%;
+    background-image: url("aadhar.png");
+    object-fit: cover;
+    background-position: center;
+    background-size: 390px;
+    background-repeat: no-repeat;
+
+}
+
+.about-pan
+{
+    position:absolute;
+    top:17%;
+    left:2%;
+    height:75%;
+    width: 55%;
+    /* border:2px solid yellow; */
+    padding:1rem;
+}
+.about-pan p
+{
+    font-size:1.3rem;
+    letter-spacing:2px;
+    line-height: 40px;
+    /* border:2px solid violet; */
+}
+/* ############## DOCS TABLE ############# */
+.docs_content{
+    border:0.2px solid rgba(0, 0, 0, 0.096);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.096),
+                0px 10px 10px rgba(0, 0, 0, 0.096),
+                0px 0px 10px rgba(0, 0, 0, 0.096);
+    height: 150vh;
+    margin-top: 2rem;
+    position:relative;
+    
+}
+
+.docs_content h1{
+    font-size:3rem;
+    margin:2rem;
+    margin-left:2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.table{
+    /* border:2px solid black; */
+    position:absolute;
+    top:10%;
+    left:8%;
+    width:85%;
+    height:75%;
+    /* padding:3px; */
+}
+.doc_table{
+    /* border:2px solid red; */
+    margin:1rem;
+    width:97%;
+    height:95%;
+}
+.table_column
+{
+    padding:0.5rem;
+    width:15%;
+    /* border:2px solid black; */
+    background-color:#00B2FF;
+    color:white;
+    font-size:1.5rem;
+    
+}
+.table_column:hover{
+    background-color:#0dacf0e5;
+}
+.table_column1
+{
+    padding:0.5rem;
+    /* border:2px solid black; */
+    font-size:1.5rem;
+    letter-spacing:1.5px;
+    color:#00B2FF;
+}
+.table ol li{
+    font-size:1.2rem;
+    margin:1.3rem;
+}
+.table ol ul li{
+    font-size:1rem;
+}
+/* ######footer section ######## */
+
+.footer
+{
+    font-size:1.5rem;
+    text-align:center;
+    height:100px;
+    background:#00B2FF;
+    color:white;
+    margin-top:0.8rem;
+    padding:3rem;
+    font-family:'Aleo', serif;
+    letter-spacing: 2px;
+}
+
